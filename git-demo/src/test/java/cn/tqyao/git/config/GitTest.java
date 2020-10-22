@@ -12,4 +12,5 @@ package cn.tqyao.git.config;
  * @description  <br>
  */
 public class GitTest {
+    //GitTest 的bug被我修复啦
 }
