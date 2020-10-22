@@ -14,7 +14,7 @@ package cn.tqyao.git.demo;
 public class EventOne {
 
     public static void main(String[] args) {
-        
+
         System.out.println("事件一");
     }
 }
