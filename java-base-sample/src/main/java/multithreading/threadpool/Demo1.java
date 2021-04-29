@@ -4,6 +4,33 @@ import java.util.concurrent.*;
 
 public class Demo1 {
     public static void main(String[] args) {
+        /**
+         * 固定长度线程池
+         * 添加任务就创建新线程
+         * 发生位置错误结束时，补充一个线程
+         */
+//        Executors.newFixedThreadPool (3);
+
+        /**
+         * 缓存线程池
+         * 线程池的规模超过处理需求，回收空闲线程
+         * 任务需求增加自动添加新线程，线程池规模不受限制
+         */
+//        Executors.newCachedThreadPool ();
+
+        /**
+         * 单线程 Executor
+         * 创建单个线程执行添加的任务
+         * 线程池异常结束，会创建新的来代替
+         * 特点：能保证依照任务队列中的执行顺序串行执行
+         */
+//        Executors.newSingleThreadExecutor ();
+
+        /**
+         * 创建了一个固定长度的线程池，而且以延迟或定时的方式来执行任务，类似于Timer。
+         */
+//        Executors.newScheduledThreadPool (3);
+
         // 创建3个线程池
         ExecutorService executorService = Executors.newFixedThreadPool (3);
         for (int i = 0; i < 4; i++) {
