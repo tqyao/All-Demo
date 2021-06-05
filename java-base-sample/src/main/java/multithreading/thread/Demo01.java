@@ -1,7 +1,7 @@
 /**
  * Copyright 2020-2030 The author personally reserves all rights.
  */
-package thread;
+package multithreading.thread;
 
 import java.time.LocalDateTime;
 import java.util.concurrent.*;
