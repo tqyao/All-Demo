@@ -34,7 +34,7 @@ public class Demo1 {
         // 创建3个线程池
         ExecutorService executorService = Executors.newFixedThreadPool (3);
         for (int i = 0; i < 4; i++) {
-            executorService.submit (new Task ());
+            executorService.submit (new TaskDemo02());
         }
         // 关闭线程池
         executorService.shutdown ();
@@ -69,7 +69,7 @@ class Task extends Thread {
     @Override
     public void run() {
 
-        synchronized (Task.class) {
+        synchronized (TaskDemo02.class) {
             System.out.println ("task + " + count++ + ":running");
         }
         try {

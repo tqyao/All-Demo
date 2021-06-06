@@ -1,7 +1,7 @@
 /**
  * Copyright 2020-2030 The author personally reserves all rights.
  */
-package multithreading.thread;
+package multithreading.threadpool;
 
 import java.time.LocalDateTime;
 import java.util.concurrent.*;
@@ -13,7 +13,7 @@ import java.util.concurrent.*;
  * @version 1.0.0 <br>
  * @date Create in 2021/5/24 22:25 <br>
  */
-public class Demo01 {
+public class Demo02 {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         /**
          * 提交Callable任务后，会获得一个Future对象，在主线程某个时刻调用Future对象的get()方法
@@ -29,7 +29,7 @@ public class Demo01 {
          */
         ExecutorService executorService = Executors.newFixedThreadPool(4);
         // 定义任务
-        Callable<LocalDateTime> task = new Task();
+        Callable<LocalDateTime> task = new TaskDemo02();
         //提交任务并且获得 Future
         Future<LocalDateTime> future = executorService.submit(task);
         // 从 future 获取返回值结果
@@ -40,7 +40,7 @@ public class Demo01 {
 /**
  * Callable接口是一个泛型接口，可以返回指定类型的结果。
  */
-class Task implements Callable<LocalDateTime> {
+class TaskDemo02 implements Callable<LocalDateTime> {
 
     @Override
     public LocalDateTime call() throws Exception {
