@@ -1,7 +1,7 @@
 /**
  * Copyright 2020-2030 The author personally reserves all rights.
  */
-package gof.practice.AbstractFactoryPattern;
+package gof.AbstractFactoryPattern;
 
 /**
  * 抽象工厂模式

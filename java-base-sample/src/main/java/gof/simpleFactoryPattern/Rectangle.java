@@ -1,7 +1,7 @@
 /**
  * Copyright 2020-2030 The author personally reserves all rights.
  */
-package gof.practice.simpleFactoryPattern;
+package gof.simpleFactoryPattern;
 
 /**
  * .<br>
@@ -10,9 +10,9 @@ package gof.practice.simpleFactoryPattern;
  * @version 1.0.0 <br>
  * @date Create in 2021/6/6 19:29 <br>
  */
-public class Square implements Shape {
+public class Rectangle implements Shape {
     @Override
     public void draw() {
-        System.out.println("正方形");
+        System.out.println("长方形");
     }
 }

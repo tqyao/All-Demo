@@ -1,4 +1,4 @@
-package gof.practice.simpleFactoryPattern;
+package gof.simpleFactoryPattern;
 
 import java.security.PrivateKey;
 import java.time.LocalDate;

@@ -1,7 +1,7 @@
 /**
  * Copyright 2020-2030 The author personally reserves all rights.
  */
-package gof.practice.AbstractFactoryPattern;
+package gof.AbstractFactoryPattern;
 
 /**
  * 由于产品实现困难决定由第三方供应商提供服务，由供应商创建抽象工厂实现生产第三方的产品
