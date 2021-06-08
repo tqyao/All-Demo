@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 790461387
+    url: jdbc:mysql://1.117.161.241:3306/all_demo_sample
+mybatis:
+  mapper-locations: classpath:sql/*.xml # xml ÎÄ¼þÎ»ÖÃ
+  type-aliases-package: cn.tqyao.mybatis.entity
+  configuration:
+    map-underscore-to-camel-case: true
+
+
+
