@@ -1,7 +1,7 @@
 /**
  * Copyright 2020-2030 The author personally reserves all rights.
  */
-package gof.AbstractFactoryPattern;
+package gof.abstractFactoryPattern;
 
 /**
  * .<br>
@@ -10,23 +10,23 @@ package gof.AbstractFactoryPattern;
  * @version 1.0.0 <br>
  * @date Create in 2021/6/6 23:04 <br>
  */
-public class FastHtmlDocumentImpl implements HtmlDocument {
+public class FastWordDocumentImpl implements WordDocument {
 
     //要转换的md
     private String md;
 
-    public FastHtmlDocumentImpl(String md){
+    public FastWordDocumentImpl(String md){
         this.md = md;
     }
 
     @Override
-    public String toHtml(String md) {
-        return "HTML：" + md;
+    public String toWord(String md) {
+        return "WORD：" + md;
     }
 
     @Override
     public void save(String path) {
-        System.out.println("Fast保存HTML文件成功！");
+        System.out.println("Fast保存word文件成功");
     }
 
     public String getMd() {

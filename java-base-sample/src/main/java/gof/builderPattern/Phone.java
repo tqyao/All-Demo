@@ -1,7 +1,7 @@
 /**
  * Copyright 2020-2030 The author personally reserves all rights.
  */
-package gof.BuilderPattern;
+package gof.builderPattern;
 
 /**
  * 建造者模式用途之一

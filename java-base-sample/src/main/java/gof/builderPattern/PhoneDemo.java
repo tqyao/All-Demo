@@ -1,6 +1,4 @@
-package gof.BuilderPattern;
-
-import com.sun.org.apache.bcel.internal.generic.NEW;
+package gof.builderPattern;
 
 public class PhoneDemo {
     public static void main(String[] args) {

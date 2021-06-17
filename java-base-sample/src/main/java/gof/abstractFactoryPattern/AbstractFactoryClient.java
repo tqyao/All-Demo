@@ -1,7 +1,7 @@
 /**
  * Copyright 2020-2030 The author personally reserves all rights.
  */
-package gof.AbstractFactoryPattern;
+package gof.abstractFactoryPattern;
 
 /**
  * .<br>
